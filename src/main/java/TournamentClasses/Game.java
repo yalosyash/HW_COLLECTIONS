@@ -15,6 +15,7 @@ public class Game {
     public int round(String playerName1, String playerName2) {
         int strengthP1 = findPlayer(playerName1);
         int strengthP2 = findPlayer(playerName2);
+
         if (strengthP1 > strengthP2) {
             return 1;
         } else if (strengthP1 < strengthP2) {
