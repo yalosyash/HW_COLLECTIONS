@@ -13,21 +13,15 @@ public class Game {
     }
 
     public int round(String playerName1, String playerName2) {
-        int strengthPlayer1 = findPlayer(playerName1).getStrength();
-        int strengthPlayer2 = findPlayer(playerName2).getStrength();
-        if (strengthPlayer1 > strengthPlayer2) {
+        int strengthP1 = findPlayer(playerName1).getStrength();
+        int strengthP2 = findPlayer(playerName2).getStrength();
+        if (strengthP1 > strengthP2) {
             return 1;
-        } else if (strengthPlayer1 < strengthPlayer2) {
+        } else if (strengthP1 < strengthP2) {
             return 2;
         }
         return 0;
     }
-
-//    private void isRegistered(String playerName) {
-//        if (!players.contains(playerName)) {
-//            throw new NotRegisteredException(playerName);
-//        }
-//    }
 
     private Player findPlayer(String playerName) {
         for (Player player : players) {
