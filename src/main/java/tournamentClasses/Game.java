@@ -1,7 +1,7 @@
-package TournamentClasses;
+package tournamentClasses;
 
-import DataClasses.Player;
-import Exceptions.NotRegisteredException;
+import dataClasses.Player;
+import exceptions.NotRegisteredException;
 
 import java.util.ArrayList;
 

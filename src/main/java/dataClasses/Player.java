@@ -1,4 +1,4 @@
-package DataClasses;
+package dataClasses;
 
 public class Player {
     private int id;
